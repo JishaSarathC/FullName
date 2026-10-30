@@ -40,8 +40,9 @@ export default function FullName(){
                     value={lastName} />
                 </div>
                 <button type="submit">Submit</button>
-                <h2>{message}</h2>
+                
             </form>
+            <h2>{message}</h2>
         </div>
     )
 }
