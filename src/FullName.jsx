@@ -6,13 +6,14 @@ export default function FullName(){
 
     const handleSubmit=(event)=>{
         event.preventDefault();
+
         if (!firstName || !lastName){
             alert(`Please fill out this field`);
+            setMessage("");
             return;
         }
         setMessage(`Full Name: ${firstName} ${lastName}`);
-        setFirstName('');
-        setLastName('');
+        
         
         
     }
@@ -42,7 +43,7 @@ export default function FullName(){
                 <button type="submit">Submit</button>
                 
             </form>
-            <h2>{message}</h2>
+            {message && <h2>{message}</h2>}
         </div>
     )
 }
