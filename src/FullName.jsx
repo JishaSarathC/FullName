@@ -10,7 +10,7 @@ export default function FullName(){
             alert(`Please fill out this field`);
             return;
         }
-        setMessage(`Full Name:${firstName} ${lastName}`);
+        setMessage(`Full Name: ${firstName} ${lastName}`);
         setFirstName('');
         setLastName('');
         
