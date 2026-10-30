@@ -39,7 +39,7 @@ export default function FullName(){
                     onChange={(event)=>setLastName(event.target.value)}
                     value={lastName} />
                 </div>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
                 <h2>{message}</h2>
             </form>
         </div>
